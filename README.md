@@ -8,10 +8,9 @@ We conduct three sets of experiments, that define different test datasets to use
     * Experiment A defines as test dataset the data used during training, to evaluate the achieved prediction accuracy per model.
     * Experiment B uses as test data the time series of 10 randomly selected tasks of the same job, excluding the training data,running inference with the model corresponding to the same job.
     * Experiment C uses the trained model of the job with identifier 113, to run inference against test data of 10 tasks belonging to the other jobs, namely 374, 399, 917 (x-axis).     
-
 We generate three plots, that correspond to each experiment and capture the resource usage prediction error when using ML models (LSTMs) vs a non-ML prediction. More details on the non-ML prediction can be found in section 2.2 of the paper.
 
-*
+* `insight.ipynb`: This notebooks creates the visualisations of a part of the time series of CPU usage (y-axis) across time (x-axis) for job 113, as shown in the Figure 2 of the paper, that allows to better understand the ML-based predictions.The first figure compares the predicted time series to the ground truth and the second with the non-ML prediction. Each box depicts different parts of the time series, where the predicted one is derived following the three different experiments described in the section 2.1 of the paper, using the trained model of job 113 for experiments A, B and job 917 for experiment C. The number on the upper right of each box shows the Pearson correlation coefficient value between the two depicted time series. The LSTM models used for inference are the ones deployed in the cloud-forecast-lstm repository that can be found here: https://github.com/muse-research-lab/cloud-forecast-lstm. 
 
 
 
@@ -21,8 +20,8 @@ Georgia Christofidi, Konstantinos Papaioannou, and Thaleia Dimitra Doudali. 2023
 Usage Forecasting? <br /><br />  In 14th Symposium on Cloud Computing (ACM SoCC’23), October 30 - November 1, 2023, Santa Cruz, California.  <br /> <br /> 
 
 ## Licence <br />
-The MIT License (MIT)
+The MIT License (MIT).
  
 ## Acknowledgements <br />
-This work is part of the grant FJC2021-047102-I, funded by MCIN/AEI/10.13039/501100011033 and the European Union «NextGenerationEU»/PRTR.<br /> 
+This work is part of the grant FJC2021-047102-I, funded by MCIN/AEI/10.13039/501100011033 and the European Union «NextGenerationEU»/PRTR.<br />  <br /> 
 <img src="docs/images/micin-financiadoUEnextgeneration-prtr-aei-1.png" width="1000"/>
