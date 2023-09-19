@@ -12,7 +12,12 @@ We generate three plots, that correspond to each experiment and capture the reso
 
 * `insight.ipynb`: This notebooks creates the visualisations of a part of the time series of CPU usage (y-axis) across time (x-axis) for job 113, as shown in the Figure 2 of the paper, that allows to better understand the ML-based predictions.The first figure compares the predicted time series to the ground truth and the second with the non-ML prediction. Each box depicts different parts of the time series, where the predicted one is derived following the three different experiments described in the section 2.1 of the paper, using the trained model of job 113 for experiments A, B and job 917 for experiment C. The number on the upper right of each box shows the Pearson correlation coefficient value between the two depicted time series. The LSTM models used for inference are the ones deployed in the cloud-forecast-lstm repository that can be found here: https://github.com/muse-research-lab/cloud-forecast-lstm. 
 
+* `ARD_experiments.ipynb`: In this notebook we define the experiments regarding the degree of data persistency over time across 4 datasets. The details of the datasets and the resource metrics we use can be found in the table below. First, in the Data Processing section, we extract the data for the experiments that follow. In the section Paper Graphs, we plot the Figures 3 and 4 of the paper that capture the cumulative distribution of the average relative delta (ARD) metric per time series and the the average ARD value across all time series of the corresponding resource metric (x-axis) for the Google dataset, respectively. To run this code, it is necessary to install the package gtd that can be found here: https://github.com/muse-research-lab/cloud-traces-comparison, along with instructions for its instalation. <br /> 
 
+* `data`: This folder contains the timeseries of all the datasets that we use for the ARD related experiments. Each subfolder corresponds to the data of each of the datasets.
+
+**Table: Cloud resource usage data used in experiments.**  <br />  <br /> 
+<img src="docs/images/Cloud Resource Usage Data.png" width="1000"/> 
 
 
 ## Paper Reference <br />
