@@ -15,7 +15,7 @@ We generate three plots, that correspond to each experiment and capture the reso
 * `ARD_experiments.ipynb`: In this notebook we define the experiments regarding the degree of data persistency over time across 4 datasets. The details of the datasets and the resource metrics we use can be found in the table below. First, in the Data Processing section, we extract the data for the experiments that follow. In the section Paper Graphs, we plot the Figures 3 and 4 of the paper that capture the cumulative distribution of the average relative delta (ARD) metric per time series and the the average ARD value across all time series of the corresponding resource metric (x-axis) for the Google dataset, respectively. To run this code, it is necessary to install the package gtd that can be found here: https://github.com/muse-research-lab/cloud-traces-comparison, along with instructions for its instalation. <br /> 
 
 * `alibaba/`, `azure/`, `bitbrains/`, `google/`: These folders contain the timeseries of resource usage of the respective datasets that we use for the ARD related experiments.
-* `pretrained_models/`: These folders contain the LSTM models used for inference in the notebooks `lstm-experiments.ipynb` and `insight.ipynb`. These models are trained on the data of the jobs that their respective subfolder name indicates. 
+* `pretrained_lstm_models/`: These folders contain the LSTM models used for inference in the notebooks `lstm-experiments.ipynb` and `insight.ipynb`. These models are trained on the data of the jobs that their respective subfolder name indicates. 
 
 **Table: Cloud resource usage data used in experiments.**  <br />  <br /> 
 <img src="docs/images/Cloud Resource Usage Data.png" width="1000"/> 
