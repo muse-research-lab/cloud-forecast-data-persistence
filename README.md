@@ -24,6 +24,7 @@ We generate three plots, that correspond to each experiment and capture the reso
 ## Paper Reference <br />
 Georgia Christofidi, Konstantinos Papaioannou, and Thaleia Dimitra Doudali. 2023. <br /><br /> Is Machine Learning Necessary for Cloud Resource
 Usage Forecasting? <br /><br />  In 14th Symposium on Cloud Computing (ACM SoCC’23), October 30 - November 1, 2023, Santa Cruz, California.  <br /> <br /> 
+https://dl.acm.org/doi/10.1145/3620678.3624790 <br /> 
 
 ## Licence <br />
 The MIT License (MIT).
